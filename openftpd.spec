@@ -1,7 +1,7 @@
 %include        /usr/lib/rpm/macros.perl
 %define	snap	20030501
-Summary:	free, open source FTP server implementation
-Summary(pl):	implementacja serwera FTP
+Summary:	Free, open source FTP server implementation
+Summary(pl):	Implementacja serwera FTP
 Name:		openftpd
 Version:	0.31
 Release:	0.%{snap}
