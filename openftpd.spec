@@ -1,5 +1,5 @@
 %include        /usr/lib/rpm/macros.perl
-%define	snap	20030501
+%define	snap	20041120
 Summary:	Free, open source FTP server implementation
 Summary(pl):	Implementacja serwera FTP
 Name:		openftpd
@@ -8,7 +8,7 @@ Release:	0.%{snap}.1
 License:	GPL
 Group:		Networking/Daemons
 Source0:	http://www.openftpd.org/%{name}-daily.tar.gz
-# Source0-md5:	ea7cbf57dca6ff0e50c051bfe6801790
+# Source0-md5:	26a9de1794b5137d283607c81ed44a14
 URL:		http://www.openftpd.org/
 BuildRequires:	glib-devel
 BuildRequires:	openssl-devel >= 0.9.7d
@@ -16,6 +16,7 @@ BuildRequires:	perl-Bit-Vector
 BuildRequires:	perl-devel >= 1:5.6
 BuildRequires:	perl-libwww
 BuildRequires:	rpm-perlprov >= 4.1-13
+Requires:	perl(DynaLoader) = %(%{__perl} -MDynaLoader -e 'print DynaLoader->VERSION')
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 # this isn't ,,standard FTP''. Don't treat it as system FTP server
 # and don't put Provides:ftpserver etc here ! --misiek
