@@ -26,7 +26,7 @@ started as an alternative version by primemover with some fixes and
 patches because the official development of FTP4ALL stalled.
 
 %description -l pl
-OpenFTPD jest darmowy±, open source implementacj± serwera FTP dla
+OpenFTPD jest darmow±, open source implementacj± serwera FTP dla
 platformy UNIX. Bazuje on na FTP4ALL (wersji 3.012), a rozpoczyna³
 jako alternatywna wersja ftp4all z wieloma poprawkami i ³atkami.
 
