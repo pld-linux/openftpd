@@ -17,7 +17,7 @@ BuildRequires:	perl-devel >= 1:5.6
 BuildRequires:	perl-libwww
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-# this isn't ,,standard ftp''. Don't treat it as system ftp server
+# this isn't ,,standard FTP''. Don't treat it as system FTP server
 # and don't put Provides:ftpserver etc here ! --misiek
 
 %description
