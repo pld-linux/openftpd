@@ -49,7 +49,6 @@ jako alternatywna wersja ftp4all z wieloma poprawkami i ³atkami.
 	TLS=yes \
 	.
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_libdir}/%{name}
