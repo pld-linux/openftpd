@@ -8,6 +8,7 @@ Release:	0.%{snap}
 License:	GPL
 Group:		Networking/Daemons
 Source0:	http://www.openftpd.org/%{name}-daily.tar.gz
+# Source0-md5:	ea7cbf57dca6ff0e50c051bfe6801790
 URL:		http://www.openftpd.org/
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	openssl-devel
