@@ -1,15 +1,16 @@
 %include        /usr/lib/rpm/macros.perl
-%define	snap	20020224
+%define	snap	20030501
 Summary:	free, open source FTP server implementation
 Summary(pl):	implementacja serwera FTP
 Name:		openftpd
-Version:	0.30.2
+Version:	0.31
 Release:	0.%{snap}
 License:	GPL
 Group:		Networking/Daemons
 Source0:	http://www.openftpd.org/%{name}-daily.tar.gz
 URL:		http://www.openftpd.org/
 BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	openssl-devel
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-modules
 BuildRequires:	perl-Bit-Vector
@@ -37,9 +38,15 @@ jako alternatywna wersja ftp4all z wieloma poprawkami i ³atkami.
 ./cons-*/cons \
 	DEBUG=no \
 	WARNINGS=yes \
+	TRCHECK=yes \
+	TRBIN=%{_sbindir}/traceroute \
+	DIRCOMPLETION=no \
 	SITEEXEC=no \
 	LOGIPS=yes \
-	ENCRYPT=yes .
+	ENCRYPT=yes \
+	DELINCOMPLETE=yes \
+	TLS=yes \
+	.
 
 
 %install
