@@ -55,13 +55,10 @@ cp -f build/misc/getpw $RPM_BUILD_ROOT%{_libdir}/%{name}/bin/
 cp -f build/misc/glconv $RPM_BUILD_ROOT%{_libdir}/%{name}/bin/
 cp -f build/misc/msg $RPM_BUILD_ROOT%{_libdir}/%{name}/bin/
 
-gzip -9nf AUTHORS BUGS CHANGES ChangeLog README TODO UPDATE \
-	  doc/*
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz doc
+%doc AUTHORS BUGS CHANGES ChangeLog README TODO UPDATE doc
 %attr(-,root,root) %{_libdir}/%{name}
