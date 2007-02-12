@@ -1,7 +1,7 @@
 %include        /usr/lib/rpm/macros.perl
 %define	snap	20041120
 Summary:	Free, open source FTP server implementation
-Summary(pl):	Implementacja serwera FTP
+Summary(pl.UTF-8):   Implementacja serwera FTP
 Name:		openftpd
 Version:	0.31
 Release:	0.%{snap}.1
@@ -27,10 +27,10 @@ platform. It is based on FTP4ALL (Version 3.012) by Crescent and
 started as an alternative version by primemover with some fixes and
 patches because the official development of FTP4ALL stalled.
 
-%description -l pl
-OpenFTPD jest darmow±, open source implementacj± serwera FTP dla
-platformy UNIX. Bazuje on na FTP4ALL (wersji 3.012), a rozpoczyna³
-jako alternatywna wersja ftp4all z wieloma poprawkami i ³atkami.
+%description -l pl.UTF-8
+OpenFTPD jest darmowÄ…, open source implementacjÄ… serwera FTP dla
+platformy UNIX. Bazuje on na FTP4ALL (wersji 3.012), a rozpoczynaÅ‚
+jako alternatywna wersja ftp4all z wieloma poprawkami i Å‚atkami.
 
 %prep
 %setup -q -n %{name}-daily
