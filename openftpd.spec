@@ -4,7 +4,7 @@ Summary:	Free, open source FTP server implementation
 Summary(pl.UTF-8):	Implementacja serwera FTP
 Name:		openftpd
 Version:	0.31
-Release:	0.%{snap}.1
+Release:	0.%{snap}.2
 License:	GPL
 Group:		Networking/Daemons
 Source0:	http://www.openftpd.org/%{name}-daily.tar.gz
@@ -16,7 +16,6 @@ BuildRequires:	perl-Bit-Vector
 BuildRequires:	perl-devel >= 1:5.6
 BuildRequires:	perl-libwww
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl(DynaLoader) = %(%{__perl} -MDynaLoader -e 'print DynaLoader->VERSION')
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 # this isn't ,,standard FTP''. Don't treat it as system FTP server
 # and don't put Provides:ftpserver etc here ! --misiek
