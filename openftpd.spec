@@ -4,11 +4,12 @@ Summary:	Free, open source FTP server implementation
 Summary(pl.UTF-8):	Implementacja serwera FTP
 Name:		openftpd
 Version:	0.31
-Release:	0.%{snap}.2
+Release:	0.%{snap}.3
 License:	GPL
 Group:		Networking/Daemons
 Source0:	http://www.openftpd.org/%{name}-daily.tar.gz
 # Source0-md5:	26a9de1794b5137d283607c81ed44a14
+Patch0:		%{name}-x86_64-endian.patch
 URL:		http://www.openftpd.org/
 BuildRequires:	glib-devel
 BuildRequires:	openssl-devel >= 0.9.7d
@@ -33,6 +34,7 @@ jako alternatywna wersja ftp4all z wieloma poprawkami i łatkami.
 
 %prep
 %setup -q -n %{name}-daily
+%patch0 -p1
 
 %build
 ./cons-*/cons \
