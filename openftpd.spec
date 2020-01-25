@@ -1,4 +1,3 @@
-%include        /usr/lib/rpm/macros.perl
 %define	snap	20041120
 Summary:	Free, open source FTP server implementation
 Summary(pl.UTF-8):	Implementacja serwera FTP
